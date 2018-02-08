@@ -58,8 +58,8 @@ window.onload = function() {
         game.physics.enable( ball, Phaser.Physics.ARCADE );
         // Make it bounce off of the world bounds.
         ball.body.collideWorldBounds = true;
-        ball.body.bounce.y = .2;
-        ball.body.gravity.y = 300;
+        ball.body.bounce.y = .5;
+        ball.body.gravity.y = 200;
         ball.body.collieWorldBounds = true;
 
         // Add some text using a CSS style.
@@ -77,10 +77,18 @@ window.onload = function() {
         // new trajectory.
 
         hitPlatform = game.physics.arcade.collide(ball, platforms);
+        ball.rotation =
 
         ball.body.velocity.x = 0;
 
         var cursors = game.input.keyboard.createCursorKeys();
+
+        if (cursors.up.isDown && hitPlatform )
+        {
+            //  Move to the left
+            ball.body.velocity.y = -150;
+        }
+
         if (cursors.left.isDown)
         {
             //  Move to the left
