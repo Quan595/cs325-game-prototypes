@@ -60,7 +60,6 @@ window.onload = function() {
         ball.body.collideWorldBounds = true;
         ball.body.bounce.y = .5;
         ball.body.gravity.y = 200;
-        ball.body.collieWorldBounds = true;
 
         // Add some text using a CSS style.
         // Center it in X, and position its top 15 pixels from the top of the world.

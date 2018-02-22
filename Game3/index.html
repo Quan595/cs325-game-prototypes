@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello! Amaze!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Catch the Stars</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+What is original about your game?
+<br/>
+- The player (UFO) collects "stars" and grow bigger.
+</li>
+
+<li><strong>Technical Merit:</strong>
+What is interesting about your game technology?
+<br/>
+- It's easy to pick up, and players can try to compete for highscore.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+What did you learn from this prototype?
+<br/>
+- Learned a little more about collisions and events.
+<br/>
+What was the easiest or hardest part of making it?
+<br/>
+- The easy part was making many objects and being able to set the group's attributes with setAll function.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
+<ul>
+<li>UFO: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/ufo.png">UFO</a></li>
+<li>Stars: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/yellow_ball.png">yellow ball</a></li>
+<li>Background: <a href="https://pixabay.com/en/star-field-stars-abstract-2294797/">star field</a></li>
+</ul>
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
+<br/>
+- I don't know any game that is similar to mine, but I did use the sample code from phaser.io (arcade-physics/group-vs-self)
+</li>
+
+<li><strong>High Concept:</strong>
+A one-sentence summary of your game.
+<br/>
+- Capture all the stars to win.
+</li>
+
+<li><strong>Theme:</strong>
+State which of the Storymatic themes you used.
+<br/>
+- I chose stargazing and caught as my themes.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+State which input, randomness, genre, and play style you used in this prototype.
+<br/>
+- I chose to use the directional keys as inputs to move the UFO.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+What game mechanic is this prototype evaluating?
+<br/>
+- Collisions and collision events.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+What experience do you want players to have when playing your game?
+<br/>
+- I want them to relax, or try to compete to see who can get the fastest time.
+</li>
+
+<li><strong>Gameplay:</strong>
+A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
+<br/>
+- The player can move the UFO in cardinal directions to try to capture the stars. The 100 stars are generated at random locations in the window with random velocities. Signals are used to detect collision, and if the UFO collide with the stars, the stars will disappear.
+</li>
+
+<li><strong>Strategies:</strong>
+What player strategies do you expect will be effective at playing this game?
+<br/>
+- It starts out easy because there are many stars in the beginning, but as the game progesses, the players should predict the movements of the stars to intercept them.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
+How will the dramatic tension interact with the gameplay tension?
+<br/>
+- The game world is located in space, and the character is simply trying to collect the stars to grow bigger.
+</li>
+
+<li><strong>Target Audience:</strong>
+A single sentence that describes the demographic you're trying to reach.
+<br/>
+- As many players as possible.
+</li>
+
+<li><strong>Play Time:</strong>
+How long does your game take to play?
+<br/>
+- About 30 seconds.
+</li>
+
+</ul>
+
+</div>
+</body>
+</html>
