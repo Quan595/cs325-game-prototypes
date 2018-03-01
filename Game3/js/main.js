@@ -74,6 +74,7 @@ window.onload = function() {
 
 	function update() {
 
+		//game.physics.arcade.collide(stars);
 	    if(game.physics.arcade.collide(stars, ufo) )
 	    {
 	    	scale += .05;
