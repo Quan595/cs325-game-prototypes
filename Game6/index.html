@@ -25,10 +25,25 @@ body
 <h2>Catch the Stars</h2>
 
 <ul>
+<li><strong>Rules:</strong>
+What is original about your game?
+<br/>
+- 1. Each player must first choose a lane.
+<br/>
+- 2. Then roll the die. (players can choose to reroll, and the spaces they move will be the ceiling average of the two numbers).
+<br/>
+- 3. If a piece lands on an already occupied tile, the existing piece will be removed.
+<br/>
+- 4. Each player only get five turns.
+<br/>
+- 5. Scores will be tallied up, and the player with the highest score wins.
+
+</li>
+
 <li><strong>Originality:</strong>
 What is original about your game?
 <br/>
-- The player (UFO) collects "stars" and grow bigger. If the UFO hits the green toxins, it will shrink. If the UFO hits the blue orb, more stars will generate and potentially have positive or negative effects on the player.
+- Similar to the sport hurdling, but simplified and has a mix of strategy and luck.
 </li>
 
 <li><strong>Technical Merit:</strong>
@@ -40,77 +55,72 @@ What is interesting about your game technology?
 <li><strong>Prototype Postmortem:</strong>
 What did you learn from this prototype?
 <br/>
-- Learned a little more about collisions and collision handlers.
+- Designing the board and the pieces.
 <br/>
 What was the easiest or hardest part of making it?
 <br/>
-- The easy part was making many objects and being able to set the group's attributes with setAll function.
+- 
 </li>
 
 <li><strong>Prototype Assets:</strong>
 Did you make your prototype assets from scratch? Did you borrow them? Cite your sources here.
-<ul>
-<li>UFO: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/ufo.png">UFO</a></li>
-<li>Green toxin: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/wizball.png">Wizball</a></li>
-<li>Blue orb: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/orb-blue.png">blue orb</a></li>
-<li>Stars: <a href="https://github.com/photonstorm/phaser-examples/blob/master/examples/assets/sprites/yellow_ball.png">yellow ball</a></li>
-<li>Background: <a href="https://pixabay.com/en/star-field-stars-abstract-2294797/">star field</a></li>
-</ul>
+<br/>
+- Made everything from scratch.
 </li>
 
 <li><strong>Prototype Closest Other Game:</strong>
 Which other game most closely resembles your game? If you are borrowing code from a Phaser Example, you must say so here. If you borrow code from elsewhere, you must say so here.
 <br/>
-- I don't know any game that is similar to mine, but I did use the sample code from phaser.io (arcade-physics/group-vs-self)
+- I don't know any game that is similar to mine (except for the actual sport itself).
 </li>
 
 <li><strong>High Concept:</strong>
 A one-sentence summary of your game.
 <br/>
-- Capture all the stars to win.
+- Score highest points to win
 </li>
 
 <li><strong>Theme:</strong>
 State which of the Storymatic themes you used.
 <br/>
-- I chose stargazing and caught as my themes.
+- I didn't choose any theme.
 </li>
 
 <li><strong>Mandated Variety:</strong>
 State which input, randomness, genre, and play style you used in this prototype.
 <br/>
-- I chose to use the directional keys as inputs to move the UFO.
+- I chose button clicking.
 </li>
 
 <li><strong>Prototype Goal:</strong>
 What game mechanic is this prototype evaluating?
 <br/>
-- Collisions and collision handling multiple groups/sprites.
+- Choosing lane and rolling a die.
 </li>
 
 <li><strong>Player Experience Goals:</strong>
 What experience do you want players to have when playing your game?
 <br/>
-- I want them to relax, or try to compete to see who can get the fastest time.
+- I want them to relax and play this simple game.
 </li>
 
 <li><strong>Gameplay:</strong>
 A paragraph describing the actions the player can perform, the system dynamics, and the core mechanic. Include a concise explanation of the prototype’s inputs and their expected effects (how to play). You can also describe game play that is not in the prototype. You may include mock-up images for parts of the game not in the prototype.
 <br/>
-- The player can move the UFO in cardinal directions to try to capture the stars. The 100 stars are generated at random locations in the window with random velocities. Signals are used to detect collision, and if the UFO collide with the stars, the stars will disappear.
+- Players first choose a lane and then roll a die. The number will indicate where they move. The person with the highest total score wins.
 </li>
 
 <li><strong>Strategies:</strong>
 What player strategies do you expect will be effective at playing this game?
 <br/>
-- It starts out easy because there are many stars in the beginning, but as the game progesses, the players should predict the movements of the stars to intercept them.
+- Try to get the high valued tiles without decrementing your own points.
 </li>
 
 <li><strong>Story/Setting/Premise:</strong>
 A paragraph about the world your game is set in and who the characters are. What makes the game world and its occupants unique and interesting? Do the tokens represent something? If the game has a backstory, mention it here. If the game is abstract, then say so.
 How will the dramatic tension interact with the gameplay tension?
 <br/>
-- The game world is located in space, and the character is simply trying to collect the stars to grow bigger.
+- The game world is just the game board itself.
 </li>
 
 <li><strong>Target Audience:</strong>
@@ -122,7 +132,7 @@ A single sentence that describes the demographic you're trying to reach.
 <li><strong>Play Time:</strong>
 How long does your game take to play?
 <br/>
-- About 60 seconds.
+- About 3 minutes.
 </li>
 
 </ul>
