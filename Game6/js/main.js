@@ -144,7 +144,7 @@ window.onload = function() {
 
 	function update() {
 
-		if(turnNumber >= 4)
+		if(turnNumber >= 10)
 		{
 			lane1.inputEnabled = false;
 			lane2.inputEnabled = false;
