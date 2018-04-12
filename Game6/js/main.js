@@ -78,6 +78,8 @@ window.onload = function() {
 	let die;
 	let dieList = [];
 
+	let instructions;
+
 	function create() {
 		
 		currentPlayer = 1;
@@ -94,11 +96,15 @@ window.onload = function() {
 		background = game.add.image(0,0,'gameboard');
 
 		let style = { font: "25px Verdana", fill: "#000000", align: "center" };
-		currentPlayerText = game.add.text(10, 10, "Current Player: 1", style);
+		currentPlayerText = game.add.text(10, 10, "Current Player: 1");
         currentLaneText = game.add.text( 10, 40, "Lane: 0", style );
         roll1Text =  game.add.text( 10, 70, "1st Roll: 0", style );
         roll2Text =  game.add.text( 10, 100, "2nd Roll: 0", style );
         currentHopText = game.add.text(10, 130, "Current Hops: 0", style);
+        instructions = game.add.text(10, 550, "Instructions:\n \
+	        1. Choose a lane.\n \
+	        2. Roll the die.\n \
+	        3. Click Go.");
 
         p1ScoreText = game.add.text(670, 10, "P1 Score: 0", style);
         p2ScoreText = game.add.text(670, 40, "P2 Score: 0", style);
@@ -334,9 +340,9 @@ window.onload = function() {
 							p1Score += points[currentHop+2];
 						}
 					}
+					board[currentLane][currentHop+2] = 1
+					game.add.image(xCord[currentLane], yCord[currentHop+2], 'blue');	
 				}
-				board[currentLane][currentHop+2] = 1
-				game.add.image(xCord[currentLane], yCord[currentHop+2], 'blue');	
 			}
 			
 			else if(board[currentLane][currentHop] == 2)
@@ -393,9 +399,9 @@ window.onload = function() {
 							p1Score += 0;
 						}
 					}
+					board[currentLane][currentHop+2] = 2
+					game.add.image(xCord[currentLane], yCord[currentHop+2], 'pink');
 				}
-				board[currentLane][currentHop+2] = 2
-				game.add.image(xCord[currentLane], yCord[currentHop+2], 'pink');
 			}
 
 			board[currentLane][currentHop] = currentPlayer;	
