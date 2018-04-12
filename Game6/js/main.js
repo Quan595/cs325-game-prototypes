@@ -102,14 +102,12 @@ window.onload = function() {
         roll2Text =  game.add.text( 10, 100, "2nd Roll: 0", style );
         currentHopText = game.add.text(10, 130, "Current Hops: 0", style);
         instructions = game.add.text(10, 550, "Instructions:\n \
-	        1. Choose a lane.\n \
+	        1. Pick a lane.\n \
 	        2. Roll the die.\n \
 	        3. Click Go.");
 
         p1ScoreText = game.add.text(670, 10, "P1 Score: 0", style);
         p2ScoreText = game.add.text(670, 40, "P2 Score: 0", style);
-
-        //positionText = game.add.text(10, 160, "Position: 0 0", style);
 
 		//lanes
 		lane1 = game.add.image(300, 600, 'boundbox');
@@ -414,20 +412,17 @@ window.onload = function() {
 			else
 				game.add.image(xCord[currentLane], yCord[currentHop], 'pink');
 
-			//test
-			//positionText.text = "Position: " + currentLane + ' ' + currentHop;
-
 			currentRollNumber = 0;
 
 			currentRoll = 0;
-			roll1Text.text = "1st Roll: 0";// + currentRoll;
-			roll2Text.text = "2nd Roll: 0";// + currentRoll;
+			roll1Text.text = "1st Roll: 0";
+			roll2Text.text = "2nd Roll: 0";
 
 			currentHop = 0
-			currentHopText.text = "Current Hops: 0";// + currentHop;
+			currentHopText.text = "Current Hops: 0";
 
 			currentLane = 0;
-			currentLaneText.text = "Lane: 0";// + currentLane;
+			currentLaneText.text = "Lane: 0";
 
 			if(currentPlayer == 1 ) 
 				{currentPlayer = 2;}
@@ -443,8 +438,6 @@ window.onload = function() {
 	
 	function restartGame()
 	{
-		//turnNumber = 0;
-		//currentPlayerText.text = "Current Player: 1";
 		game.state.restart();
 	}
 };
